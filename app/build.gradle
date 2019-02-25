@@ -16,11 +16,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    android {
+    /*android {
 // ...
         aaptOptions.cruncherEnabled = false
 // ...
-    }
+    }*/
 }
 
 dependencies {
