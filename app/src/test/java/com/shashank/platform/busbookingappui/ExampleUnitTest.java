@@ -1,4 +1,4 @@
-package com.minemark.platform.busbookingappui;
+package com.shashank.platform.busbookingappui;
 
 import org.junit.Test;
 

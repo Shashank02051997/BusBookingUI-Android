@@ -1,12 +1,13 @@
-package com.minemark.platform.busbookingappui;
+package com.shashank.platform.busbookingappui;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,12 +20,9 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         search_buses = findViewById(R.id.search_buses);
-        search_buses.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Main2Activity.class);
-                startActivity(intent);
-            }
+        search_buses.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+            startActivity(intent);
         });
     }
 }

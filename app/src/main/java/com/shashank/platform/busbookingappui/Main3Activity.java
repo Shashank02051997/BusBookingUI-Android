@@ -1,9 +1,10 @@
-package com.minemark.platform.busbookingappui;
+package com.shashank.platform.busbookingappui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Main3Activity extends AppCompatActivity {
 

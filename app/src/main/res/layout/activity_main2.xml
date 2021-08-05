@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Main2Activity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#512da8"
         android:theme="@style/AppTheme.AppBarOverlay"
         app:elevation="0dp">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -23,7 +23,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp">
+                android:layout_marginEnd="16dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -35,17 +35,17 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
                     android:src="@drawable/ic_filter" />
 
             </RelativeLayout>
 
-        </android.support.v7.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-16dp"
@@ -87,37 +87,37 @@
                         android:id="@+id/linearLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:layout_below="@+id/textView"
                         android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
                         android:weightSum="100">
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_weight="45"
                             android:fontFamily="@font/gotham"
                             android:text="Pune"
                             android:textAlignment="center"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp"
-                            android:layout_weight="45"/>
+                            android:textSize="18sp" />
 
                         <ImageView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_swap_horiz_white_24dp"
-                            android:layout_weight="10"/>
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_swap_horiz_white_24dp" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_weight="45"
                             android:fontFamily="@font/gotham"
                             android:text="Mumbai"
                             android:textAlignment="center"
                             android:textColor="#FFFFFF"
-                            android:textSize="18sp"
-                            android:layout_weight="45"/>
+                            android:textSize="18sp" />
 
                     </LinearLayout>
 
@@ -136,17 +136,18 @@
 
                 </RelativeLayout>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/cardView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
                     android:layout_marginTop="-44dp"
+                    android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
                     app:contentPadding="16dp">
 
                     <LinearLayout
@@ -166,26 +167,25 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="9:00AM - 12:30PM"
-                                android:textStyle="bold"
                                 android:textColor="#000000"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="Expo bus service"
-                                android:textStyle="bold"
                                 android:layout_marginTop="4dp"
                                 android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/calibri"
+                                android:text="Expo bus service"
                                 android:textColor="#4b4b4b"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="A/C Sleeper (2+2)"
-                                android:textColor="#8a8a8a"
-                                />
+                                android:textColor="#8a8a8a" />
 
                         </LinearLayout>
 
@@ -195,40 +195,41 @@
                             android:layout_weight="40"
                             android:gravity="center"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="$600.00"
                                 android:textAlignment="textEnd"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
                                 android:textColor="#f5a622"
-                                />
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
                                 android:text="3.30 Hour"
                                 android:textAlignment="textEnd"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:textColor="#b3b3b3"
-                                />
+                                android:textColor="#b3b3b3" />
                         </LinearLayout>
                     </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
                     app:contentPadding="16dp">
 
                     <LinearLayout
@@ -248,26 +249,25 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="10:00AM - 2:00PM"
-                                android:textStyle="bold"
                                 android:textColor="#000000"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="Red Bus service"
-                                android:textStyle="bold"
                                 android:layout_marginTop="4dp"
                                 android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/calibri"
+                                android:text="Red Bus service"
                                 android:textColor="#4b4b4b"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="A/C Sleeper (2+2)"
-                                android:textColor="#8a8a8a"
-                                />
+                                android:textColor="#8a8a8a" />
 
                         </LinearLayout>
 
@@ -277,40 +277,41 @@
                             android:layout_weight="40"
                             android:gravity="center"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="$560.00"
                                 android:textAlignment="textEnd"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
                                 android:textColor="#f5a622"
-                                />
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
                                 android:text="4 Hour"
                                 android:textAlignment="textEnd"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:textColor="#b3b3b3"
-                                />
+                                android:textColor="#b3b3b3" />
                         </LinearLayout>
                     </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
                     app:contentPadding="16dp">
 
                     <LinearLayout
@@ -330,26 +331,25 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="12:15PM - 3:30PM"
-                                android:textStyle="bold"
                                 android:textColor="#000000"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="Start service"
-                                android:textStyle="bold"
                                 android:layout_marginTop="4dp"
                                 android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/calibri"
+                                android:text="Start service"
                                 android:textColor="#4b4b4b"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="A/C Sleeper (2+2)"
-                                android:textColor="#8a8a8a"
-                                />
+                                android:textColor="#8a8a8a" />
 
                         </LinearLayout>
 
@@ -359,40 +359,41 @@
                             android:layout_weight="40"
                             android:gravity="center"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="$450.00"
                                 android:textAlignment="textEnd"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
                                 android:textColor="#f5a622"
-                                />
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
                                 android:text="3.15 Hour"
                                 android:textAlignment="textEnd"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:textColor="#b3b3b3"
-                                />
+                                android:textColor="#b3b3b3" />
                         </LinearLayout>
                     </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
                     app:contentPadding="16dp">
 
                     <LinearLayout
@@ -412,26 +413,25 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="3:00PM - 5:45PM"
-                                android:textStyle="bold"
                                 android:textColor="#000000"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="Travelo service"
-                                android:textStyle="bold"
                                 android:layout_marginTop="4dp"
                                 android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/calibri"
+                                android:text="Travelo service"
                                 android:textColor="#4b4b4b"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="A/C Sleeper (2+2)"
-                                android:textColor="#8a8a8a"
-                                />
+                                android:textColor="#8a8a8a" />
 
                         </LinearLayout>
 
@@ -441,40 +441,41 @@
                             android:layout_weight="40"
                             android:gravity="center"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="$375.00"
                                 android:textAlignment="textEnd"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
                                 android:textColor="#f5a622"
-                                />
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
                                 android:text="2.45 Hour"
                                 android:textAlignment="textEnd"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:textColor="#b3b3b3"
-                                />
+                                android:textColor="#b3b3b3" />
                         </LinearLayout>
                     </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
                     app:contentPadding="16dp">
 
                     <LinearLayout
@@ -494,26 +495,25 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="7:00PM - 10:00PM"
-                                android:textStyle="bold"
                                 android:textColor="#000000"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="Shuttle bus service"
-                                android:textStyle="bold"
                                 android:layout_marginTop="4dp"
                                 android:layout_marginBottom="4dp"
+                                android:fontFamily="@font/calibri"
+                                android:text="Shuttle bus service"
                                 android:textColor="#4b4b4b"
-                                />
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="A/C Sleeper (2+2)"
-                                android:textColor="#8a8a8a"
-                                />
+                                android:textColor="#8a8a8a" />
 
                         </LinearLayout>
 
@@ -523,31 +523,31 @@
                             android:layout_weight="40"
                             android:gravity="center"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="$700.00"
                                 android:textAlignment="textEnd"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
                                 android:textColor="#f5a622"
-                                />
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
                                 android:text="3.00 Hour"
                                 android:textAlignment="textEnd"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:textColor="#b3b3b3"
-                                />
+                                android:textColor="#b3b3b3" />
                         </LinearLayout>
 
                     </LinearLayout>
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -555,4 +555,4 @@
 
     </RelativeLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
